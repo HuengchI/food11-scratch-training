@@ -21,7 +21,7 @@ All results below are obtained via pure scratch training with diverse network ar
 > Tip: Click the link to access those top-performing implementation. You can conveniently modify and extend the code for your own usage.
 
 
-<img src="./training_curve_9184.png" alt="Training Curve of the 'Regnety-3.2gf Multi-view BYOL' recipe." width="70%">
+<img src="./training_curve_9184.png" alt="Training Curve of the 'Regnety-3.2gf Multi-view BYOL' recipe." width="40%">
 
 
 ### 🌟 Core Baseline: RegNetY (0.9012)
@@ -30,15 +30,15 @@ It acts as the most stable starting point for subsequent optimization. To hit ov
 
 
 
-### 🔧 Optimized Training Schemes
-Extended experimental scripts integrate various effective optimization modules, including CBAM, CoordAttn, standard BYOL and Multi-View BYOL (MV-BYOL).
+### 🔧 Enhancement Strategies
+Extended experimental scripts integrate various effective optimization modules, including **CBAM**, **Coordinate Attention**, vanilla **BYOL** and **Multi-View** BYOL (MV-BYOL).
 
 > **Important Remarks**
 These solutions stay in experimental status. Though they boost validation accuracy to 91.84%, they have not been fully optimized. (e.g. Hyperparameters and loss coefficients remain untuned for optimal performance.)
 
 
 ### 🏔️ Further Optimization Directions
-Existing transfer learning methods based on ImageNet pretrained weights can easily reach around 97% accuracy on Food11. Pure scratch training has already broken the ~92% accuracy mark, steadily narrowing the performance gap with huge potential for further improvement.
+Existing transfer learning (fine-tuning) methods based on ImageNet pretrained weights can easily reach around **97%** accuracy on Food11. Pure scratch training has already broken the **~92%** accuracy mark, steadily narrowing the performance gap with huge potential for further improvement.
 
 Here are reliable optimization paths to boost accuracy further:
 - **Test Time Augmentation (TTA)**
@@ -56,7 +56,7 @@ More promising strategies worth exploring:
 ## 📦 Setup & Usage
 
 ## Recommended Hardware
-- **GPU with ≥20GB VRAM** (e.g., RTX A6000, RTX 4090, A100, V100)
+- **GPU with ≥16GB VRAM** (e.g., RTX A6000, RTX 4090, A100, V100)
 - CUDA support is **required** (the code is fully optimized for GPU)
 
 ### Installation
@@ -83,7 +83,7 @@ The original dataset can be downloaded via this [`link`](https://github.com/virg
 - Validation: 3,430 images (11 classes)
 - Test: 3,347 images (unlabeled)
 
-All images are loaded **directly into GPU memory** for fastest training.
+All images are loaded directly into GPU memory for fastest training.
 
 
 
