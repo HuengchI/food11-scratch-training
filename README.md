@@ -21,7 +21,7 @@ All results below are obtained via pure scratch training with diverse network ar
 > Tip: Click the link to access those top-performing implementation. You can conveniently modify and extend the code for your own usage.
 
 
-<img src="./assets/training_curve_9184.png" alt="Training Curve" style="max-width:45%;width:100%;">
+<img src="./assets/training_curve_9184.png" alt="Training Curve" width="500">
 
 ### 🌟 Core Baseline: RegNetY (0.9012)
 
